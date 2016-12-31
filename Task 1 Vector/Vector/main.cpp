@@ -29,7 +29,7 @@ int main(){
     }
     cout<<endl;
 
-    vec3 = vec1;                 //test = operator adf
+    vec3 = vec1;                 //test = operator adfasdf
     for(int i=0;i<vec3.getsize();i++){
         cout<<vec3[i]<<" ";
     }
