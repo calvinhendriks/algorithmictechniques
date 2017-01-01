@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1483210423 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\sorting\main.cpp
+	<iostream>
+	<SortClass.h>
+	<vector>
+	<iomanip>
+	<time.h>
+	<cmath>
+	<stdlib.h>
+	<cstdio>
+
+1483208736 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\sorting\include\sortclass.h
+
+1483208671 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\sorting\src\sortclass.cpp
+	"SortClass.h"
+	<iostream>
+
+1483212004 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\src\sortclass.cpp
+	"SortClass.h"
+	<iostream>
+
+1483211967 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\include\sortclass.h
+
+1483211887 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\main.cpp
+	<iostream>
+	<SortClass.h>
+	<vector>
+	<iomanip>
+	<time.h>
+	<cmath>
+	<stdlib.h>
+	<cstdio>
+

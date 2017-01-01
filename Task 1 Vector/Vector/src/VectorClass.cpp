@@ -78,6 +78,7 @@ int VectorClass::operator[](int i){
     return arr[i];
 }
 
+
 int VectorClass::at(int i){
     if(i<vecsize){
         return arr[i];
