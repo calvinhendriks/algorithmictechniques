@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1483116036 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\main.cpp
+1483202357 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\main.cpp
 	<iostream>
 	<VectorClass.h>
 
-1483195342 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\include\vectorclass.h
+1483204325 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\include\vectorclass.h
 
-1483195814 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\src\vectorclass.cpp
+1483204386 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\src\vectorclass.cpp
 	"VectorClass.h"
 	<iostream>
 

@@ -1,8 +1,8 @@
 #ifndef SORTCLASS_H
 #define SORTCLASS_H
-#include <vector>;
+#include <vector>
 
-
+using namespace std;
 class SortClass
 {
     public:
@@ -11,6 +11,7 @@ class SortClass
         void bubblesort(int* , int);
         void bubbleSort(vector<int>&);
         void printVector(vector<int>);
+
         //int* insertionsort();
         //int* mergesort();
         //int* quicksort();
@@ -18,7 +19,7 @@ class SortClass
     protected:
 
     private:
-
+    double elapsedTime;
 };
 
 #endif // SORTCLASS_H
