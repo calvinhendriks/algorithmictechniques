@@ -8,8 +8,10 @@ class SortClass
     public:
         SortClass();
         ~SortClass();
-        void bubblesort(int* , int);
+        //void bubblesort(int* , int);
         void bubbleSort(vector<int>&);
+        void merge(vector<int>&, int, int, int);
+        void mergeSort(vector<int>&, int , int );
         void printVector(vector<int>);
 
         //int* insertionsort();

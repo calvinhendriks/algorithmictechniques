@@ -2,22 +2,10 @@
 #include <iostream>
 #include <windows.h>
 
-/** Use to init the clock */
-#define TIMER_INIT \
-    LARGE_INTEGER frequency; \
-    LARGE_INTEGER t1,t2; \
-    QueryPerformanceFrequency(&frequency);
 
-
-/** Use to start the performance timer */
-#define TIMER_START QueryPerformanceCounter(&t1);
-
-/** Use to stop the performance timer and output the result to the standard stream. Less verbose than \c TIMER_STOP_VERBOSE */
-#define TIMER_STOP \
-    QueryPerformanceCounter(&t2); \
-    elapsedTime=(float)((t2.QuadPart-t1.QuadPart)*1000000000)/frequency.QuadPart; \
 
 using namespace std;
+
 
 SortClass::SortClass()
 {
@@ -29,36 +17,9 @@ SortClass::~SortClass()
     //dtor
 }
 
-
-void SortClass::bubblesort(int arr[], int n){
-    TIMER_INIT;
-    TIMER_START;
-
-    int i,j,temp;
-
-     for(i=1;i<n;++i)
-    {
-        for(j=0;j<(n-i);++j)
-            if(arr[j]>arr[j+1])
-            {
-                temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-            }
-    }
-
-    TIMER_STOP;
-    cout<<"bubblesort took: " <<elapsedTime <<" nanoseconds"<<endl;
-
-
-
-
-}
-
 void SortClass::bubbleSort(vector<int>& a)
 {
-        TIMER_INIT;
-        TIMER_START;
+
 
         int temp;
         bool swapp = true;
@@ -82,10 +43,86 @@ void SortClass::bubbleSort(vector<int>& a)
         }
     }
 
-    TIMER_STOP;
-    cout<<"bubblesort took: " <<elapsedTime <<" nanoseconds"<<endl;
+
 
 }
+
+// Merges two subarrays of arr[].
+// First subarray is arr[l..m]
+// Second subarray is arr[m+1..r]
+void SortClass::merge(vector<int>& arr, int l, int m, int r)
+{
+    int i, j, k;
+    int n1 = m - l + 1;
+    int n2 =  r - m;
+
+    /* create temp arrays */
+    int L[n1], R[n2];
+
+    /* Copy data to temp arrays L[] and R[] */
+    for (i = 0; i < n1; i++)
+        L[i] = arr[l + i];
+    for (j = 0; j < n2; j++)
+        R[j] = arr[m + 1+ j];
+
+    /* Merge the temp arrays back into arr[l..r]*/
+    i = 0; // Initial index of first subarray
+    j = 0; // Initial index of second subarray
+    k = l; // Initial index of merged subarray
+    while (i < n1 && j < n2)
+    {
+        if (L[i] <= R[j])
+        {
+            arr[k] = L[i];
+            i++;
+        }
+        else
+        {
+            arr[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+
+    /* Copy the remaining elements of L[], if there
+       are any */
+    while (i < n1)
+    {
+        arr[k] = L[i];
+        i++;
+        k++;
+    }
+
+    /* Copy the remaining elements of R[], if there
+       are any */
+    while (j < n2)
+    {
+        arr[k] = R[j];
+        j++;
+        k++;
+    }
+}
+
+/* l is for left index and r is right index of the
+   sub-array of arr to be sorted */
+void SortClass::mergeSort(vector<int>& arr, int l, int r)
+{
+
+    if (l < r)
+    {
+        // Same as (l+r)/2, but avoids overflow for
+        // large l and h
+        int m = l+(r-l)/2;
+
+        // Sort first and second halves
+        mergeSort(arr, l, m);
+        mergeSort(arr, m+1, r);
+
+        merge(arr, l, m, r);
+    }
+
+}
+
 
 void SortClass::printVector(vector<int> a){
     for (size_t i=0;  i <a.size();  i++) {
