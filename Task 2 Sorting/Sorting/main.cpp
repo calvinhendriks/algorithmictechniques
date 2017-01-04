@@ -21,7 +21,7 @@
 /** Use to stop the performance timer and output the result to the standard stream. Less verbose than \c TIMER_STOP_VERBOSE */
 #define TIMER_STOP \
     QueryPerformanceCounter(&t2); \
-    elapsedTime=(float)((t2.QuadPart-t1.QuadPart)*1000000000000)/frequency.QuadPart; \
+    elapsedTime=(float)((t2.QuadPart-t1.QuadPart)*1000)/frequency.QuadPart; \
 
     double elapsedTime;
 
@@ -33,28 +33,57 @@ int main()
 {
     SortClass sc;
     srand(time(NULL));
-    vector<int> myvector (1);
+    int n = 1000;
+    vector<int> myvector(n);
+    vector<int> myvector2 (n);
+    vector<int> myvector3 (n);
+    vector<int> myvector4 (n);
+    vector<int> myvector5 (n);
+    std::vector<int>::size_type sz = myvector.size();
+
+
+
     //assign some random values:
-    for (int i=0; i<20; i++) myvector[i]=rand();
+    for (unsigned i=0; i<sz; i++){
+            myvector[i]=myvector2[i]=myvector3[i]=myvector4[i]=myvector5[i]=rand();
+    }
+
+
+
     //bubblesort
     TIMER_INIT;
     TIMER_START;
     sc.bubbleSort(myvector);
     TIMER_STOP;
     cout<<"bubblesort took: " <<elapsedTime <<" picoseconds"<<endl;
-    //mergesort
-    //TIMER_INIT;
+
+    //insertionsort
     TIMER_START;
-    sc.mergeSort(myvector, 0, myvector.size()-1);
+    sc.insertionSort(myvector4);
+    TIMER_STOP;
+    cout<<"insertionsort took: "<<elapsedTime<<" picoseconds"<<endl;
+
+
+    //mergesort
+    TIMER_START;
+    sc.mergeSort(myvector2, 0, myvector2.size()-1);
     TIMER_STOP;
     cout<<"mergesort took: " <<elapsedTime <<" picoseconds"<<endl;
+
+    //quicksort
+    TIMER_START;
+    sc.quickSort(myvector3, 0, myvector3.size()-1);
+    TIMER_STOP;
+    cout<<"quicksort took: "<<elapsedTime <<" picoseconds"<<endl;
+
+    //selectionsort
+    TIMER_START;
+    sc.selectionSort(myvector5);
+    TIMER_STOP;
+    cout<<"selectionsort took: "<<elapsedTime<<" picoseconds"<<endl;
+
     return 0;
 
 
 }
 
-void vprint(vector<int> v){
-for (int i=0; i<v.size();i++){
-    cout << v[i] << endl;
-}
-}

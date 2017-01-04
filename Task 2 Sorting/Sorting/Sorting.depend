@@ -15,15 +15,15 @@
 	"SortClass.h"
 	<iostream>
 
-1483388464 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\src\sortclass.cpp
+1483539326 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\src\sortclass.cpp
 	"SortClass.h"
 	<iostream>
 	<windows.h>
 
-1483387806 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\include\sortclass.h
+1483539352 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\include\sortclass.h
 	<vector>
 
-1483388622 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\main.cpp
+1483538718 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\main.cpp
 	<iostream>
 	<SortClass.h>
 	<vector>

@@ -42,7 +42,17 @@ cout<<"bubblesort array: " <<time<<endl;
     TIMER_STOP;
     cout<<"bubblesort took: " <<elapsedTime <<" nanoseconds"<<endl;
 
-
-
-
 }
+
+/////////////////////////////////////////////////////////////////
+
+  int arr[] = {10, 7, 8, 9, 1, 5,6};
+    int n = sizeof(arr)/sizeof(arr[0]);
+	
+////////////////////////////////////////////////////////////////////////
+
+    //print unsorted vectors
+    sc.printVector(myvector);
+    sc.printVector(myvector2);
+    sc.printVector(myvector3);
+    sc.printVector(myvector4);
