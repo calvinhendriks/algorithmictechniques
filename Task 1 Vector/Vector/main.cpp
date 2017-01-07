@@ -7,7 +7,8 @@ using namespace std;
 
 
 int main(){
- test();
+ test();            //tests all the functions of VectorClass
+ test2();           //compares adding/deleting of elements and resizing of VectorClass against standard vector
 
 }
 

@@ -3,5 +3,6 @@
 
 
     int test();
+    int test2();
 
 #endif // TEST_H

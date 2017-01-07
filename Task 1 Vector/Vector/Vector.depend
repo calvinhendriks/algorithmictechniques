@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1483829906 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\main.cpp
+1483830557 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\main.cpp
 	<iostream>
 	<VectorClass.h>
 	"test.h"
@@ -10,9 +10,13 @@
 	"VectorClass.h"
 	<iostream>
 
-1483829343 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\include\test.h
+1483830499 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\include\test.h
 
-1483829895 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\test.cpp
+1483830435 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\test.cpp
 	<iostream>
 	<VectorClass.h>
+
+1483830493 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\test2.cpp
+	<iostream>
+	"VectorClass.h"
 
