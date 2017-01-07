@@ -16,6 +16,9 @@ class VectorClass
         int at(int);                        //same as operator, but checks if argument is valid
         VectorClass& operator=(const VectorClass&);
         VectorClass& operator+=(int);
+        void resize(int,int = 0);
+        void erase(int);
+        void erase(int,int);
 
 
     protected:
