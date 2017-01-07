@@ -23,7 +23,6 @@ VectorClass::VectorClass(const VectorClass& v){
     for(int i=0; i<v.vecsize; i++ ){
         arr[i]=v.arr[i];
     }
-
 }
 
 
@@ -45,7 +44,7 @@ void VectorClass::alloc_new(){
 void VectorClass::pop_back(){
 	vecsize--;
 
-	if (vecsize < maxsize/4 && maxsize > 32)
+	if (vecsize < maxsize/4 && maxsize > 20)
 	{
 		maxsize = maxsize/2;
 	}
@@ -73,7 +72,7 @@ void VectorClass::push_back(int i){
     vecsize++;
 }
 
-int VectorClass::getsize(){
+int VectorClass::size(){
     return vecsize;
 }
 
@@ -86,7 +85,7 @@ int VectorClass::at(int i){
     if(i<vecsize){
         return arr[i];
     }
-    throw 10;
+    cout<<"invalid index!"<<endl;
 }
 
 VectorClass& VectorClass::operator+=(int i){
@@ -145,7 +144,7 @@ void VectorClass::resize(int n , int val)
 	else
 	{
         vecsize = n;
-		if (vecsize < maxsize/4 && maxsize > 32)
+		if (vecsize < maxsize/4 && maxsize > 20)
         {
 		maxsize = maxsize/2;
 
@@ -157,21 +156,6 @@ void VectorClass::resize(int n , int val)
 			newarr[i] = arr[i];
 		}
 
-
-
-
-
-
-		//newarr = new int[n];
-		//for (int i = 0; i < n; ++i)
-		//{
-		//	newarr[i] = arr[i];
-		//}
-		//for (int j = 0; j < (oldsize-n) ; j++)
-		//{
-			//vecsize--;
-		//}
-		//vecsize = n;
 	}
 
 	delete[] arr;
@@ -194,7 +178,7 @@ void VectorClass::erase(int index){
 void VectorClass::erase(int i1, int i2){
         if(i1 >= 0 && i2 >= 0 && i1 < vecsize && i2 < vecsize){
             //if erase with only one argument was called
-            if(i1 = i2){
+            if(i1 == i2){
                 //check if truncating is necessary
                 if (vecsize-1 < maxsize/4 && maxsize > 32)
                 {
@@ -223,20 +207,22 @@ void VectorClass::erase(int i1, int i2){
                     int elements = (i2 - i1) +1;
                     int j = 0;
                     //check if truncating is necessary
-                    if (vecsize-elements < maxsize/4 && maxsize > 32)
+                    if (vecsize-elements < maxsize/4 && maxsize > 20)
                     {
                     maxsize = maxsize/2;
                     }
 
                     int* newarr = new int[maxsize];
 
-                    //first segment to be copied
+                    //segment before 1st argument index
                     for(int i = 0; i < i1; i++){
+
                         newarr[j++] = arr[i];
                     }
 
-                    //last segment to be copied
+                    //segment after 2nd argument index
                     for(int i = i2+1; i < vecsize; i++){
+
                         newarr[j++] = arr[i];
                     }
 
@@ -253,6 +239,19 @@ void VectorClass::erase(int i1, int i2){
             cout<<"invalid arguments"<<endl;
         }
 
+}
+
+int VectorClass::capacity(){
+
+return maxsize;
+
+}
+
+void VectorClass::clear(){
+    vecsize = 0;
+    maxsize = 20;
+    int* newarr = new int[maxsize];
+    arr = newarr;
 }
 
 

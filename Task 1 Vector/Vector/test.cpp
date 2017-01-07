@@ -1,78 +1,13 @@
-LARGE_INTEGER start, stop, freq;
-QueryPerformanceFrequency(&freq);
-QueryPerformanceCounter(&start);
-QueryPerformanceCounter(&stop);
-float time = ((stop.QuadPart - start.QuadPart) * 1000000.0 )/ freq.QuadPart;
-cout<<"bubblesort array: " <<time<<endl;
+#include <iostream>
+#include <VectorClass.h>
 
-//////////////////////////////////////////
 
- int arr[100];
-    int n = 20;
-    srand(time(NULL));
-    for(int i=0;i<n;i++){
-        arr[i] = rand();
-    }
-    sc.bubblesort(arr,n);
+void vprint(VectorClass);
 
-    for (int i = 0; i < n; ++i)  {
-    cout<<arr[i]<<" ";
-    }cout<<endl;
+using namespace std;
 
-	
-////////////////////	/////////////////////////////
-
-	void SortClass::bubblesort(int arr[], int n){
-    TIMER_INIT;
-    TIMER_START;
-
-    int i,j,temp;
-
-     for(i=1;i<n;++i)
-    {
-        for(j=0;j<(n-i);++j)
-            if(arr[j]>arr[j+1])
-            {
-                temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-            }
-    }
-
-    TIMER_STOP;
-    cout<<"bubblesort took: " <<elapsedTime <<" nanoseconds"<<endl;
-
-}
-
-/////////////////////////////////////////////////////////////////
-
-  int arr[] = {10, 7, 8, 9, 1, 5,6};
-    int n = sizeof(arr)/sizeof(arr[0]);
-	
-////////////////////////////////////////////////////////////////////////
-
-    //print unsorted vectors
-    sc.printVector(myvector);
-    sc.printVector(myvector2);
-    sc.printVector(myvector3);
-    sc.printVector(myvector4);
-	
-//////////////////////////////////////////////////////////////////////////
-
-/*int inp;
-    while(1){
-        cin >> inp;
-        if(inp == -1){break;}
-        vec1.push_back(inp);
-    }
-    cout << "you've entered " <<vec1.getsize() << " elements." <<endl;
-    cout << "The elements in the vector are: ";
-    */
-    vprint(vec1);
-	
-//////////////////////////////////////////////////////////////////////////////
-
- int n = 15;
+int test(){
+    int n = 15;
     VectorClass vec1;                                       //test normal constructor
     cout<<vec1.capacity()<<endl;
 
@@ -326,3 +261,15 @@ cout<<"bubblesort array: " <<time<<endl;
 
 
     return 0;
+
+
+}
+
+void vprint(VectorClass v){
+
+    for(int i = 0; i < v.size() ; i++){
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
+
+}
