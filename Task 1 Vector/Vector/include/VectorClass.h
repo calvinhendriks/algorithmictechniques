@@ -11,7 +11,7 @@ class VectorClass
         ~VectorClass();                             //destructor
         void pop_back();                            //remove the last element
         void push_back(int);                        //add element at end of the vector
-        int size();                              //returns the vector size
+        int size();                                 //returns the vector size
         int operator[](int);                        //operator [] now returns element at argument index
         int at(int);                                //same as operator, but checks if argument is valid
         VectorClass& operator+=(int);
@@ -19,7 +19,7 @@ class VectorClass
         void resize(int,int = 0);                   //resize the vector to size of 1st arg., rest of the vector is filled with 2nd arg.(default is 0)
         void erase(int);                            //erase element at argument index (calls erase(int,int)).
         void erase(int,int);                        //erase elements between argument indexes.
-        int capacity();                           //returns maxsize
+        int capacity();                             //returns maxsize
         void clear();                               //removes all elements and makes vecsize 0;
 
 

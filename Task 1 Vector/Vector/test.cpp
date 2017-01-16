@@ -1,8 +1,9 @@
 #include <iostream>
 #include <VectorClass.h>
+#include <vector>
+#include "test.h"
 
 
-void vprint(VectorClass);
 
 using namespace std;
 
@@ -276,3 +277,14 @@ void vprint(VectorClass v){
     cout<<endl;
 
 }
+
+void vectorprint(vector<int> v){
+
+for(int i = 0; i < v.size() ; i++){
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
+
+}
+
+

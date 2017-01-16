@@ -39,6 +39,7 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/VectorClass.cpp" />
 		<Unit filename="test.cpp" />
+		<Unit filename="test2.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
