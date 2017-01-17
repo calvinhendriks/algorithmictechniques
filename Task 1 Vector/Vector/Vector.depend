@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1483979241 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\main.cpp
+1484674418 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\main.cpp
 	<iostream>
 	"VectorClass.h"
 	"test.h"
@@ -10,7 +10,7 @@
 	"VectorClass.h"
 	<iostream>
 
-1483978937 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\include\test.h
+1484671954 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\include\test.h
 	<vector>
 
 1483977802 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\test.cpp
@@ -19,11 +19,69 @@
 	<vector>
 	"test.h"
 
-1484526322 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\test2.cpp
+1484579427 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\test2.cpp
 	<iostream>
 	<VectorClass.h>
 	<vector>
 	"test.h"
+	<iomanip>
+	<time.h>
+	<cmath>
+	<stdlib.h>
+	<cstdio>
+	<Windows.h>
+
+1484586456 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\src\test.cpp
+	<iostream>
+	<VectorClass.h>
+	<vector>
+	"test.h"
+
+1484670718 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\src\testpushback.cpp
+	<iostream>
+	<VectorClass.h>
+	<vector>
+	"test.h"
+	<fstream>
+	<iomanip>
+	<time.h>
+	<cmath>
+	<stdlib.h>
+	<cstdio>
+	<Windows.h>
+
+1484675607 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\src\testresize.cpp
+	<iostream>
+	<VectorClass.h>
+	<vector>
+	"test.h"
+	<iomanip>
+	<time.h>
+	<cmath>
+	<stdlib.h>
+	<cstdio>
+	<Windows.h>
+	<fstream>
+
+1484671578 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\src\teststuff.cpp
+	<iostream>
+	<VectorClass.h>
+	<vector>
+	"test.h"
+	<fstream>
+	<iomanip>
+	<time.h>
+	<cmath>
+	<stdlib.h>
+	<cstdio>
+	<Windows.h>
+
+1484674071 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 1 vector\vector\src\testpopback.cpp
+	<iostream>
+	<VectorClass.h>
+	<vector>
+	"test.h"
+	<fstream>
 	<iomanip>
 	<time.h>
 	<cmath>

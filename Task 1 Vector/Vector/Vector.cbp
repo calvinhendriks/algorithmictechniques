@@ -38,8 +38,10 @@
 		<Unit filename="include/test.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/VectorClass.cpp" />
-		<Unit filename="test.cpp" />
-		<Unit filename="test2.cpp" />
+		<Unit filename="src/test.cpp" />
+		<Unit filename="src/testpushback.cpp" />
+		<Unit filename="src/testresize.cpp" />
+		<Unit filename="src/teststuff.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
