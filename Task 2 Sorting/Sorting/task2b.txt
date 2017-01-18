@@ -1,0 +1,10 @@
+Bubblesort       took 5805.76 microseconds
+Insertionsort    took: 1015.09 microseconds
+Mergesort        took: 5.59674 microseconds
+Quicksort        took: 5.41077 microseconds
+Selectionsort    took: 2687.26 microseconds
+Countsort        took: 0.958996 microseconds
+Radixsort   	 took: 3.00713 microseconds
+Bucketsort       took: 0.34895 microseconds
+
+

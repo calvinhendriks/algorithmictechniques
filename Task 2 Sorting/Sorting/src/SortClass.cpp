@@ -1,11 +1,6 @@
 #include "SortClass.h"
-#include <iostream>
-#include <windows.h>
-
-
-
+#define RANGE 9999
 using namespace std;
-
 
 SortClass::SortClass()
 {
@@ -197,6 +192,125 @@ void SortClass::selectionSort(vector<int>& a)
         }
     }
 }
+
+void SortClass::countSort(vector<int>& arr){
+
+// The main function that sort the given string arr[] in
+// alphabatical order
+
+    // The output character array that will have sorted arr
+    int output[arr.size()];
+
+    // Create a count array to store count of inidividul
+    // characters and initialize count array as 0
+    int count[RANGE + 1], i;
+    memset(count, 0, sizeof(count));
+
+    cout<<"test"<<endl;
+
+    // Store count of each character
+    for(i = 0; i<arr.size(); ++i)
+        ++count[arr[i]];
+
+    // Change count[i] so that count[i] now contains actual
+    // position of this character in output array
+    for (i = 1; i <= RANGE; ++i)
+        count[i] += count[i-1];
+
+    cout<<"test"<<endl;
+
+    // Build the output character array
+    for (i = 0; i<arr.size(); ++i)
+    {
+        output[count[arr[i]]-1] = arr[i];
+        --count[arr[i]];
+    }
+
+    // Copy the output array to arr, so that arr now
+    // contains sorted characters
+    for (i = 0; i<arr.size(); ++i)
+        arr[i] = output[i];
+}
+
+//RADIX SORT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111
+
+// A utility function to get maximum value in arr[]
+int SortClass::getMax(vector<int> arr)
+{
+    int mx = arr[0];
+    for (int i = 1; i < arr.size(); i++)
+        if (arr[i] > mx)
+            mx = arr[i];
+    return mx;
+}
+
+// A function to do counting sort of arr[] according to
+// the digit represented by exp.
+void SortClass:: expcountSort(vector<int>& arr, int exp)
+{
+    int n = arr.size();
+    int output[n]; // output array
+    int i, count[10] = {0};
+
+    // Store count of occurrences in count[]
+    for (i = 0; i < n; i++)
+        count[ (arr[i]/exp)%10 ]++;
+
+    // Change count[i] so that count[i] now contains actual
+    //  position of this digit in output[]
+    for (i = 1; i < 10; i++)
+        count[i] += count[i - 1];
+
+    // Build the output array
+    for (i = n - 1; i >= 0; i--)
+    {
+        output[count[ (arr[i]/exp)%10 ] - 1] = arr[i];
+        count[ (arr[i]/exp)%10 ]--;
+    }
+
+    // Copy the output array to arr[], so that arr[] now
+    // contains sorted numbers according to current digit
+    for (i = 0; i < n; i++)
+        arr[i] = output[i];
+}
+
+// The main function to that sorts arr[] of size n using
+// Radix Sort
+void SortClass::radixSort(vector<int>& arr)
+{
+    // Find the maximum number to know number of digits
+    int m = getMax(arr);
+
+    // Do counting sort for every digit. Note that instead
+    // of passing digit number, exp is passed. exp is 10^i
+    // where i is current digit number
+    for (int exp = 1; m/exp > 0; exp *= 10)
+        expcountSort(arr, exp);
+}
+
+void SortClass::bucketSort(vector<int>& arr){
+    int n = arr.size();
+  //Here range is [0,9999]
+  int m = 10000;
+
+  //Create m empty buckets
+  int buckets[m];
+
+  //Intialize all buckets to 0
+  for (int i = 0; i < m; ++i)
+    buckets[i] = 0;
+
+  //Increment the number of times each element is present in the input
+  //array. Insert them in the buckets
+  for (int i = 0; i < n; ++i)
+    ++buckets[arr[i]];
+
+  //Sort using insertion sort and concatenate
+  for (int i = 0, j = 0; j < m; ++j)
+    for (int k = buckets[j]; k > 0; --k)
+      arr[i++] = j;
+}
+
 
 void SortClass::printVector(vector<int> a){
     for (size_t i=0;  i <a.size();  i++) {

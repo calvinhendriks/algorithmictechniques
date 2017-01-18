@@ -1,8 +1,20 @@
 #ifndef SORTCLASS_H
 #define SORTCLASS_H
 #include <vector>
-
+#include <iostream>
+#include <iomanip>
+#include <time.h>
+#include <cmath>
+#include <stdlib.h>
+#include <cstdio>
+#include <Windows.h>
+#include <fstream>
+#include <string>
+#include <sstream>
+#include <iomanip>
+#include <algorithm>
 using namespace std;
+
 class SortClass
 {
     public:
@@ -11,11 +23,24 @@ class SortClass
         //void bubblesort(int* , int);
         void bubbleSort(vector<int>&);
         void insertionSort(vector<int>&);
+
         void merge(vector<int>&, int, int, int);
         void mergeSort(vector<int>&, int , int);
+
         int partition(vector<int>&, int, int);
-        void selectionSort(vector<int>&);
         void quickSort(vector<int>&, int, int);
+
+        void selectionSort(vector<int>&);
+
+        void countSort(vector<int>&);
+
+        int getMax(vector<int>);
+        void expcountSort(vector<int>&, int);
+        void radixSort(vector<int>&);
+
+        void bucketSort(vector<int>&);
+
+
         void printVector(vector<int>);
         void swap(int* , int* );
 
@@ -29,6 +54,10 @@ class SortClass
     private:
     //double elapsedTime;
 };
+
+int task2a();
+int task2b();
+int testalgorithms();
 
 
 /** Use to init the clock */

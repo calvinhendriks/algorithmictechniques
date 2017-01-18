@@ -13,7 +13,7 @@ int main(){
     //testpushback();           //compares adding/deleting of elements and resizing of VectorClass against standard vector
     //testresize();
     testerase();
-    //teststuff();
+    teststuff();
 
 }
 

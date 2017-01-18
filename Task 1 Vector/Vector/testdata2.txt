@@ -1,0 +1,102 @@
+Adding 10 elements std::vector took:0.0316107
+Adding 20 elements std::vector took:0.00862111
+Adding 30 elements std::vector took:0.00533688
+Adding 40 elements std::vector took:0.00615794
+Adding 50 elements std::vector took:0.00615794
+Adding 10000 elements std::vector took:0.21758
+Adding 20000 elements std::vector took:0.386718
+Adding 30000 elements std::vector took:0.570225
+Adding 40000 elements std::vector took:0.788626
+Adding 50000 elements to std::vector took:1.00005
+Adding 10 elements std::vector took:0.0131369
+Adding 20 elements std::vector took:0.00780005
+Adding 30 elements std::vector took:0.00821058
+Adding 40 elements std::vector took:0.00615794
+Adding 50 elements std::vector took:0.00574741
+Adding 10000 elements std::vector took:0.227433
+Adding 20000 elements std::vector took:0.383024
+Adding 30000 elements std::vector took:0.621541
+Adding 40000 elements std::vector took:0.833785
+Adding 50000 elements to std::vector took:0.979112
+Adding 10 elements std::vector took:0.0312002
+Adding 20 elements std::vector took:0.00944217
+Adding 30 elements std::vector took:0.00533688
+Adding 40 elements std::vector took:0.00574741
+Adding 50 elements std::vector took:0.00574741
+Adding 10000 elements std::vector took:0.229896
+Adding 20000 elements std::vector took:0.385076
+Adding 30000 elements std::vector took:0.601015
+Adding 40000 elements std::vector took:1.08995
+Adding 50000 elements to std::vector took:1.35351
+Adding 10 elements std::vector took:0.0135475
+Adding 20 elements std::vector took:0.00574741
+Adding 30 elements std::vector took:0.00451582
+Adding 40 elements std::vector took:0.00574741
+Adding 50 elements std::vector took:0.00574741
+Adding 10000 elements std::vector took:0.215938
+Adding 20000 elements std::vector took:0.394108
+Adding 30000 elements std::vector took:0.568172
+Adding 40000 elements std::vector took:0.919175
+Adding 50000 elements to std::vector took:1.037
+Adding 10 elements std::vector took:0.0135475
+Adding 20 elements std::vector took:0.00615794
+Adding 30 elements std::vector took:0.00451582
+Adding 40 elements std::vector took:0.00533688
+Adding 50 elements std::vector took:0.00533688
+Adding 10000 elements std::vector took:0.237696
+Adding 20000 elements std::vector took:0.38795
+Adding 30000 elements std::vector took:0.588699
+Adding 40000 elements std::vector took:0.835016
+Adding 50000 elements to std::vector took:0.967617
+!!!Adding 10 elements to veccpp1 took 0.035716 seconds
+!!!Adding 20 elements to veccpp2 took 0.00574741 seconds
+!!!Adding 30 elements to veccpp7 took 0.00492635 seconds
+!!!Adding 40 elements to veccpp8 took 0.00574741 seconds
+Adding 10 elements std::vector took:0.00328423
+Adding 20 elements std::vector took:0.00492635
+Adding 30 elements std::vector took:0.00451582
+Adding 40 elements std::vector took:0.00574741
+Adding 50 elements std::vector took:0.00533688
+Adding 10000 elements std::vector took:0.214296
+Adding 20000 elements std::vector took:0.394929
+Adding 30000 elements std::vector took:0.630162
+Adding 40000 elements std::vector took:0.774668
+Adding 50000 elements to std::vector took:0.96228
+!!!Adding 10 elements to veccpp1 took 0.0197054 seconds
+!!!Adding 20 elements to veccpp2 took 0.00656847 seconds
+!!!Adding 30 elements to veccpp7 took 0.00492635 seconds
+!!!Adding 40 elements to veccpp8 took 0.00574741 seconds
+Adding 10 elements std::vector took:0.00369476
+Adding 20 elements std::vector took:0.00451582
+Adding 30 elements std::vector took:0.00492635
+Adding 40 elements std::vector took:0.00533688
+Adding 50 elements std::vector took:0.00780005
+Adding 10000 elements std::vector took:0.218401
+Adding 20000 elements std::vector took:0.378918
+Adding 30000 elements std::vector took:0.58172
+Adding 40000 elements std::vector took:0.7915
+Adding 50000 elements to std::vector took:1.0255
+Adding 10 elements std::vector took:0.035716
+Adding 20 elements std::vector took:0.00944217
+Adding 30 elements std::vector took:0.00492635
+Adding 40 elements std::vector took:0.00615794
+Adding 50 elements std::vector took:0.00615794
+Adding 10000 elements std::vector took:0.279981
+Adding 20000 elements std::vector took:0.52753
+Adding 30000 elements std::vector took:0.679836
+Adding 40000 elements std::vector took:0.788216
+Adding 50000 elements to std::vector took:0.955301
+!!!Adding 10 elements to veccpp1 took 0.0533688 seconds
+!!!Adding 20 elements to veccpp2 took 0.00903164 seconds
+!!!Adding 30 elements to veccpp7 took 0.00821058 seconds
+!!!Adding 40 elements to veccpp8 took 0.00944217 seconds
+Adding 10 elements std::vector took:0.00615794
+Adding 20 elements std::vector took:0.00780005
+Adding 30 elements std::vector took:0.00821058
+Adding 40 elements std::vector took:0.00944217
+Adding 50 elements std::vector took:0.00903164
+Adding 10000 elements std::vector took:0.323497
+Adding 20000 elements std::vector took:0.578435
+Adding 30000 elements std::vector took:0.62072
+Adding 40000 elements std::vector took:0.851848
+Adding 50000 elements to std::vector took:1.23077

@@ -15,22 +15,36 @@
 	"SortClass.h"
 	<iostream>
 
-1483539326 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\src\sortclass.cpp
+1484692624 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\src\sortclass.cpp
 	"SortClass.h"
-	<iostream>
-	<windows.h>
 
-1484677103 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\include\sortclass.h
+1484690692 c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\include\sortclass.h
 	<vector>
-
-1483539611 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\main.cpp
 	<iostream>
-	<SortClass.h>
-	<vector>
 	<iomanip>
 	<time.h>
 	<cmath>
 	<stdlib.h>
 	<cstdio>
 	<Windows.h>
+	<fstream>
+	<string>
+	<sstream>
+	<iomanip>
+	<algorithm>
+
+1484697760 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\main.cpp
+	"SortClass.h"
+
+1484677729 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\src\assignment2a.cpp
+	"SortClass.h"
+
+1484677979 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\src\testalgorithms.cpp
+	"SortClass.h"
+
+1484696432 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\src\task2a.cpp
+	"SortClass.h"
+
+1484696318 source:c:\calvin\university_of_lodz\courses\algorithmic techniques\project 1\task 2 sorting\sorting\src\task2b.cpp
+	"SortClass.h"
 

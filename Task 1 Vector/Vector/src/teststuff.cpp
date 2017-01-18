@@ -14,10 +14,11 @@ using namespace std;
 int teststuff(){
 
     ofstream testdata;
-    testdata.open("testdata.txt",ofstream::out | std::ofstream::app);
+    testdata.open("testdata2.txt",ofstream::out | std::ofstream::app);
     TIMER_INIT
 
     /*
+
     //for loop 10 elements
     vector<int> veccpp1;
     TIMER_START
@@ -53,8 +54,8 @@ int teststuff(){
     }
     TIMER_STOP
     testdata<<"!!!Adding 40 elements to veccpp8 took "<<elapsedTime<<" seconds"<<endl;
-    */
 
+    */
 
     //while loop 10 elements
     int b = 0;

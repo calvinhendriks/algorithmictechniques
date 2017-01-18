@@ -80,3 +80,13 @@ Adding 20000 elements std::vector took:0.412992
 Adding 30000 elements std::vector took:0.583772
 Adding 40000 elements std::vector took:0.784111
 Adding 50000 elements to std::vector took:0.975007
+Adding 10 elements std::vector took:0.0328423
+Adding 20 elements std::vector took:0.0151896
+Adding 30 elements std::vector took:0.00492635
+Adding 40 elements std::vector took:0.00492635
+Adding 50 elements std::vector took:0.00574741
+Adding 10000 elements std::vector took:0.238928
+Adding 20000 elements std::vector took:0.401497
+Adding 30000 elements std::vector took:0.596909
+Adding 40000 elements std::vector took:0.831732
+Adding 50000 elements to std::vector took:1.00292
