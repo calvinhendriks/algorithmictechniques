@@ -1,0 +1,4 @@
+veccpp: erasing one element      took 0.00123159 microseconds
+vecimpl: erasing one element     took 0.00246317 microseconds
+veccpp: erasing 50000 elements   took 0.013958 microseconds
+vecimpl: erasing 50000 elements  took 0.249602 microseconds

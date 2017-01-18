@@ -1,0 +1,12 @@
+veccpp: resizing from 100 to 5000 elements (no value type arg.) took 0.020937 microseconds
+vecimpl: resizing from 100 to 5000 elements (no value type arg.) took 0.0320213 microseconds
+veccpp: resizing from 100 to 500000 elements (no value type arg.) took 1.58095 microseconds
+vecimpl: resizing from 100 to 500000 elements (no value type arg.) took 1.81208 microseconds
+veccpp: resizing from 100 to 5000 elements (valuetype arg = 5) took 0.0135475 microseconds
+vecimpl: resizing from 100 to 5000 elements (valuetype arg = 5) took 0.027916 microseconds
+veccpp: resizing from 100 to 500000 elements (valuetype arg = 5) took 1.1113 microseconds
+vecimpl: resizing from 100 to 500000 elements (valuetype arg = 5) took 1.97054 microseconds
+veccpp: resizing from 5000 to 100 elements took 0.000410529 microseconds
+vecimpl: resizing from 5000 to 100 elements took 0.00492635 microseconds
+veccpp: resizing from 500000 to 100 elements took 0.000821058 microseconds
+vecimpl: resizing from 500000 to 100 elements took 0.285318 microseconds

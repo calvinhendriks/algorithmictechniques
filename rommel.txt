@@ -324,5 +324,4 @@ cout<<"bubblesort array: " <<time<<endl;
     vprint(vec2);
     cout<<"size of vec2:  "<<vec2.size()<<" maxsize of vec2: "<<vec2.capacity()<<endl;
 
-
     return 0;

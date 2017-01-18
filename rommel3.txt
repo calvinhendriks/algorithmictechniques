@@ -1,0 +1,15 @@
+	//erasing one element from beginning
+	
+	TIMER_START
+    veccpp.erase(veccpp.begin());
+    TIMER_STOP
+    cout<<"veccpp: erasing one element      took "<<elapsedTime<<" microseconds"<<endl;
+    testdata<<"veccpp: erasing one element      took "<<elapsedTime<<" microseconds"<<endl;
+
+
+
+    TIMER_START
+    vecimpl.erase(0);
+    TIMER_STOP
+    cout<<"vecimpl: erasing one element     took "<<elapsedTime<<" microseconds"<<endl;
+    testdata<<"vecimpl: erasing one element     took "<<elapsedTime<<" microseconds"<<endl;

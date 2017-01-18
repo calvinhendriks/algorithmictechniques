@@ -1,6 +1,15 @@
 #ifndef VECTORCLASS_H
 #define VECTORCLASS_H
 
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <time.h>
+#include <cmath>
+#include <stdlib.h>
+#include <cstdio>
+#include <Windows.h>
+#include <vector>
 
 class VectorClass
 {

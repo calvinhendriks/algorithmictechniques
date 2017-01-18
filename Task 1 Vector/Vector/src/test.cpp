@@ -1,6 +1,4 @@
-#include <iostream>
 #include <VectorClass.h>
-#include <vector>
 #include "test.h"
 
 
